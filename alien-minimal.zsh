@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export PROMPT_START_TAG='-->'
+export PROMPT_START_TAG='>_ '
 export AM_ERROR_ON_START_TAG=1
 export AM_SHOW_PROCESS_TIME=2 # show if not 0
 export AM_SHOW_FULL_DIR=1 # shows the full dir path
