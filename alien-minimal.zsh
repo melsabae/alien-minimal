@@ -1,22 +1,5 @@
 #!/usr/bin/env zsh
 
-export PROMPT_START_TAG=">_ "
-export AM_ERROR_ON_START_TAG=1
-export AM_SHOW_PROCESS_TIME=2
-export AM_SHOW_FULL_DIR=1 # doesn't look like this works
-export AM_UPDATE_L_PROMPT=1
-#export USE_NERD_FONT=1
-
-export PLIB_GIT_ADD_SYM=+
-export PLIB_GIT_DEL_SYM=-
-export PLIB_GIT_MOD_DEL=%
-export PLIB_GIT_NEW_SYM=*
-export PLIB_GIT_PUSH_SYM=↑
-export PLIB_GIT_PULL_SYM=↓
-
-export PLIB_GIT_TRACKED_COLOR=green
-export PLIB_GIT_UNTRACKED_COLOR=yellow
-
 THEME_ROOT=${0:A:h}
 
 source "${THEME_ROOT}/modules/init.zsh"
@@ -61,4 +44,3 @@ function precmd(){
   am_async_prompt
   am_timer_start
 }
-
