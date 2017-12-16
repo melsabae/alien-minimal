@@ -1,5 +1,19 @@
 #!/usr/bin/env zsh
 
+export PROMPT_START_TAG='-->'
+export AM_ERROR_ON_START_TAG=1
+export AM_SHOW_PROCESS_TIME=2 # show if not 0
+export AM_SHOW_FULL_DIR=1 # shows the full dir path
+export AM_UPDATE_L_PROMPT=1
+export PLIB_GIT_ADD_SYM=+
+export PLIB_GIT_DEL_SYM=-
+export PLIB_GIT_MOD_SYM=⭑
+export PLIB_GIT_NEW_SYM=?
+export PLIB_GIT_PUSH_SYM=↑
+export PLIB_GIT_PULL_SYM=↓
+export PLIB_GIT_TRACKED_COLOR=green
+export PLIB_GIT_UNTRACKED_COLOR=red
+
 THEME_ROOT=${0:A:h}
 
 source "${THEME_ROOT}/modules/init.zsh"
